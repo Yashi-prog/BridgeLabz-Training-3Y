@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #f4f1ea;
+    color: #292929;
+}
+
+/* Header */
+header {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Subheading */
+.subheading {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Article */
+article {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px 30px 60px;
+}
+
+/* Paragraph spacing */
+article p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* First letter */
+article p::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* First line */
+article p::first-line {
+    font-weight: bold;
+}
+
+/* Highlight */
+mark {
+    background-color: #ffe082;
+    padding: 2px 5px;
+}
+
+/* Blockquote */
+blockquote {
+    margin: 35px 0;
+    padding: 25px;
+    border-left: 6px solid #607d8b;
+    background-color: #dfe7ea;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

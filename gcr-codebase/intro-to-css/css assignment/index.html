@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: white;
+            width: 90%;
+            max-width: 700px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .questions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .questions a {
+            text-decoration: none;
+            background-color: #263238;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .questions a:hover {
+            background-color: #546e7a;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 600px) {
+            .questions {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Assignment 5</h1>
+
+        <p>HTML & CSS Practical Questions</p>
+
+        <div class="questions">
+
+            <a href="task1.html">Question 1</a>
+            <a href="task2.html">Question 2</a>
+            <a href="task3.html">Question 3</a>
+            <a href="task4.html">Question 4</a>
+            <a href="task5.html">Question 5</a>
+            <a href="task6.html">Question 6</a>
+            <a href="task7.html">Question 7</a>
+            <a href="task8.html">Question 8</a>
+            <a href="task9.html">Question 9</a>
+            <a href="task10.html">Question 10</a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

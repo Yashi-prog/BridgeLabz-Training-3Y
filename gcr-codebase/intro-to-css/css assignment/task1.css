@@ -1,0 +1,152 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3ff;
+    color: #25213b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #33265c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 1000;
+}
+
+/* Name */
+header h1 {
+    font-size: 1.5rem;
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2em;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #d8c8ff;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding-top: 70px;
+}
+
+/* Home section */
+.hero {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 8%;
+    background-color: #e9e2ff;
+}
+
+/* Introduction */
+.intro {
+    width: 55%;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #33265c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #55418a;
+}
+
+/* Profile image */
+.profile {
+    width: 30%;
+    text-align: center;
+}
+
+.profile img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #33265c;
+}
+
+/* About section */
+.about {
+    min-height: 40vh;
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    width: 70%;
+    margin: auto;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+/* Contact section */
+.contact {
+    min-height: 25vh;
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #ddd4fa;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #33265c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
