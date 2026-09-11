@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7 - UI Components</title>
+
+    <link rel="stylesheet" href="question7.css">
+</head>
+<body>
+
+    <header>
+        <h1>UI Components</h1>
+        <p>Search Bar, Buttons and Dropdown</p>
+    </header>
+
+    <main>
+        <section class="component-container">
+
+            <!-- Search Bar Card -->
+            <article class="component-card">
+                <h2>Search Bar</h2>
+
+                <form class="search-form">
+                    <label for="search">Search</label>
+
+                    <div class="search-group">
+                        <input
+                            type="search"
+                            id="search"
+                            name="search"
+                            placeholder="Search something..."
+                        >
+
+                        <button type="submit" class="primary-btn">
+                            Search
+                        </button>
+                    </div>
+                </form>
+            </article>
+
+
+            <!-- Buttons Card -->
+            <article class="component-card">
+                <h2>Buttons</h2>
+
+                <div class="button-group">
+                    <button type="button" class="primary-btn">
+                        Primary
+                    </button>
+
+                    <button type="button" class="secondary-btn">
+                        Secondary
+                    </button>
+
+                    <button type="button" class="outline-btn">
+                        Outline
+                    </button>
+                </div>
+            </article>
+
+
+            <!-- Dropdown Card -->
+            <article class="component-card">
+                <h2>Dropdown</h2>
+
+                <label for="category">Choose a category</label>
+
+                <select id="category" name="category">
+                    <option value="">Select an option</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="web">Web Design</option>
+                </select>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Assignment 8 - Question 7</p>
+    </footer>
+
+</body>
+</html>

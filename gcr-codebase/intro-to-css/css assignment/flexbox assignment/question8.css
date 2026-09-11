@@ -1,0 +1,211 @@
+/* =========================
+   GENERAL PAGE STYLING
+   ========================= */
+
+/* Use border-box for the page elements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+    color: #222;
+
+    background: #f4f6f8;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header */
+header {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background: #2c3e50;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+
+/* =========================
+   MAIN SECTION
+   ========================= */
+
+main {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* Comparison container */
+.comparison-section {
+    width: 100%;
+    max-width: 1000px;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 30px;
+}
+
+
+/* Individual cards */
+.box-card {
+    flex: 1;
+
+    padding: 25px;
+
+    background: white;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+.box-card h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   DEMONSTRATION BOXES
+   ========================= */
+
+.demo-box {
+    width: 100%;
+
+    min-height: 180px;
+
+    padding: 30px;
+
+    border: 10px solid #2c3e50;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+    CONTENT-BOX
+
+    The width includes only the content.
+    Padding and border are added outside it.
+*/
+.content-box {
+    box-sizing: content-box;
+
+    width: 100%;
+
+    background: #d6eaf8;
+}
+
+
+/*
+    BORDER-BOX
+
+    The width includes:
+    content + padding + border.
+*/
+.border-box {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    background: #fadbd8;
+}
+
+
+/* Text inside demonstration boxes */
+.demo-box h3 {
+    margin: 0 0 10px;
+}
+
+.demo-box p {
+    margin: 0;
+}
+
+
+/* Explanation */
+.explanation {
+    margin-top: 25px;
+
+    line-height: 1.6;
+
+    text-align: left;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    padding: 15px;
+
+    text-align: center;
+
+    background: #2c3e50;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 750px) {
+
+    .comparison-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-card {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .box-card {
+        padding: 20px;
+    }
+
+    .demo-box {
+        padding: 20px;
+        border-width: 8px;
+    }
+}

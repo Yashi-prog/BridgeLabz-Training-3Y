@@ -1,0 +1,199 @@
+/* ------------------------------
+   General Page Styling
+-------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+
+/* ------------------------------
+   Header
+-------------------------------- */
+
+header {
+    text-align: center;
+    background-color: #243447;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+
+/* ------------------------------
+   Main Section
+-------------------------------- */
+
+main {
+    padding: 40px 20px;
+}
+
+
+/* ------------------------------
+   Flexbox Layout
+   All examples appear in one row
+-------------------------------- */
+
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ------------------------------
+   Example Cards
+-------------------------------- */
+
+.example-card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.example-card h2 {
+    margin-top: 0;
+    color: #243447;
+}
+
+.example-card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* ------------------------------
+   :hover Example
+-------------------------------- */
+
+.hover-link {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+/* Changes when mouse moves over link */
+.hover-link:hover {
+    background-color: #1d6fa5;
+    transform: scale(1.05);
+}
+
+
+/* ------------------------------
+   :focus Example
+-------------------------------- */
+
+.focus-button {
+    padding: 12px 20px;
+    border: 2px solid #27ae60;
+    background-color: white;
+    color: #27ae60;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Changes when button receives focus */
+.focus-button:focus {
+    outline: 3px solid #f1c40f;
+    background-color: #27ae60;
+    color: white;
+}
+
+
+/* ------------------------------
+   :active Example
+-------------------------------- */
+
+.active-button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #9b59b6;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Changes while button is being pressed */
+.active-button:active {
+    background-color: #6c3483;
+    transform: scale(0.90);
+}
+
+
+/* ------------------------------
+   :nth-child() Example
+-------------------------------- */
+
+.color-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.color-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+
+/* Selects the second list item */
+.color-list li:nth-child(2) {
+    background-color: #f1c40f;
+}
+
+/* Selects the fourth list item */
+.color-list li:nth-child(4) {
+    background-color: #e74c3c;
+    color: white;
+}
+
+
+/* ------------------------------
+   Footer
+-------------------------------- */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #243447;
+    color: white;
+}
+
+
+/* ------------------------------
+   Responsive Design
+-------------------------------- */
+
+@media (max-width: 700px) {
+
+    .examples {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .example-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}

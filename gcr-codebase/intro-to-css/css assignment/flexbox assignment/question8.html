@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8 - Box Sizing</title>
+
+    <link rel="stylesheet" href="question8.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Box-Sizing Comparison</h1>
+        <p>Comparing content-box and border-box</p>
+    </header>
+
+    <main>
+
+        <section class="comparison-section">
+
+            <article class="box-card">
+                <h2>Default: Content-Box</h2>
+
+                <div class="demo-box content-box">
+                    <h3>Content-Box</h3>
+                    <p>
+                        Width does not include padding and border.
+                    </p>
+                </div>
+
+                <p class="explanation">
+                    With <strong>content-box</strong>, the specified width
+                    applies only to the content. Padding and borders are
+                    added outside the specified width.
+                </p>
+            </article>
+
+
+            <article class="box-card">
+                <h2>Border-Box</h2>
+
+                <div class="demo-box border-box">
+                    <h3>Border-Box</h3>
+                    <p>
+                        Width includes padding and border.
+                    </p>
+                </div>
+
+                <p class="explanation">
+                    With <strong>border-box</strong>, the specified width
+                    includes the content, padding, and border.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Assignment 8 - Question 8</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+```css
+/* =====================================
+   GENERAL PAGE STYLING
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+    text-align: center;
+    background-color: #243447;
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+
+/* =====================================
+   COMMON SECTION STYLING
+===================================== */
+
+.selector-section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.selector-section h2 {
+    margin-top: 0;
+    color: #243447;
+}
+
+
+/* =====================================
+   1. ELEMENT SELECTOR
+   Targets all <p> elements
+===================================== */
+
+p {
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   2. CLASS SELECTOR
+   Targets elements with class="highlight"
+===================================== */
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 12px;
+    border-left: 5px solid #f1c40f;
+}
+
+
+/* =====================================
+   3. ID SELECTOR
+   Targets the element with id="special-text"
+===================================== */
+
+#special-text {
+    background-color: #d5f5e3;
+    color: #196f3d;
+
+    padding: 15px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   4. ATTRIBUTE SELECTOR
+   Targets links having target="_blank"
+===================================== */
+
+a[target="_blank"] {
+    color: #2980b9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Attribute selector for text input */
+
+input[type="text"] {
+    padding: 12px;
+
+    border: 2px solid #3498db;
+
+    border-radius: 6px;
+
+    width: 250px;
+}
+
+
+/* =====================================
+   5. DESCENDANT COMBINATOR
+   Selects every <p> inside .descendant-example
+===================================== */
+
+.descendant-example div p {
+    background-color: #e8daef;
+    padding: 12px;
+
+    border-left: 5px solid #8e44ad;
+}
+
+
+/* =====================================
+   6. CHILD COMBINATOR >
+   Selects only direct child paragraphs
+===================================== */
+
+.child-example > div > p {
+    background-color: #d6eaf8;
+    padding: 12px;
+
+    border-left: 5px solid #3498db;
+}
+
+
+/* =====================================
+   7. ADJACENT SIBLING +
+   Selects the paragraph immediately
+   following another paragraph
+===================================== */
+
+.sibling-example p + p {
+    background-color: #fdebd0;
+    padding: 12px;
+
+    border-left: 5px solid #e67e22;
+}
+
+
+/* =====================================
+   8. GENERAL SIBLING ~
+   Selects all paragraphs that come
+   after the first paragraph
+===================================== */
+
+.general-sibling-example p ~ p {
+    background-color: #fadbd8;
+    padding: 12px;
+
+    border-left: 5px solid #e74c3c;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    text-align: center;
+
+    background-color: #243447;
+    color: white;
+
+    padding: 20px;
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 700px) {
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .selector-section {
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
+```

@@ -1,0 +1,233 @@
+/* Reset and box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #2c3e50;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Main section */
+main {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+/* Animation cards */
+.animation-area {
+    width: 100%;
+    max-width: 1100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+}
+
+/* Individual cards */
+.animation-card {
+    flex: 1;
+    min-height: 350px;
+
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.animation-card h2 {
+    margin-top: 0;
+}
+
+/* =========================
+   ANIMATION 1 - MOVING BOX
+   ========================= */
+
+.box-container {
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* Keyframes for moving box */
+@keyframes moveBox {
+    0% {
+        transform: translateX(-60px);
+    }
+
+    50% {
+        transform: translateX(60px);
+    }
+
+    100% {
+        transform: translateX(-60px);
+    }
+}
+
+.moving-box {
+    width: 70px;
+    height: 70px;
+
+    background: #3498db;
+    border-radius: 10px;
+
+    /* Animation properties */
+    animation-name: moveBox;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* =========================
+   ANIMATION 2 - BOUNCING BALL
+   ========================= */
+
+.ball-container {
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Keyframes for bouncing ball */
+@keyframes bounceBall {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+
+    background: #e74c3c;
+    border-radius: 50%;
+
+    /* Animation properties */
+    animation-name: bounceBall;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* =========================
+   ANIMATION 3 - COLOR TEXT
+   ========================= */
+
+.text-container {
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Keyframes for color-changing text */
+@keyframes colorChange {
+    0% {
+        color: #3498db;
+    }
+
+    50% {
+        color: #e67e22;
+    }
+
+    100% {
+        color: #8e44ad;
+    }
+}
+
+.color-text {
+    animation-name: colorChange;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .animation-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animation-card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+}

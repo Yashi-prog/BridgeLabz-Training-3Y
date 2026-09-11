@@ -1,0 +1,159 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Selectors Practice</title>
+
+    <link rel="stylesheet" href="question4.css">
+</head>
+
+<body>
+
+    <!-- Semantic Header -->
+    <header>
+        <h1>CSS Selectors Practice</h1>
+        <p>Examples of different CSS selectors</p>
+    </header>
+
+
+    <main>
+
+        <!-- Element Selector -->
+        <section class="selector-section">
+
+            <h2>1. Element Selector</h2>
+
+            <p>
+                This paragraph is styled using an element selector.
+            </p>
+
+            <p>
+                Element selectors target HTML elements directly.
+            </p>
+
+        </section>
+
+
+        <!-- Class Selector -->
+        <section class="selector-section">
+
+            <h2>2. Class Selector</h2>
+
+            <p class="highlight">
+                This paragraph uses a class selector.
+            </p>
+
+            <p class="highlight">
+                Multiple elements can use the same class.
+            </p>
+
+        </section>
+
+
+        <!-- ID Selector -->
+        <section class="selector-section">
+
+            <h2>3. ID Selector</h2>
+
+            <p id="special-text">
+                This paragraph is styled using an ID selector.
+            </p>
+
+        </section>
+
+
+        <!-- Attribute Selector -->
+        <section class="selector-section">
+
+            <h2>4. Attribute Selector</h2>
+
+            <a href="https://example.com" target="_blank">
+                External Link
+            </a>
+
+            <br><br>
+
+            <input
+                type="text"
+                placeholder="Type something here">
+
+        </section>
+
+
+        <!-- Descendant Combinator -->
+        <section class="selector-section descendant-example">
+
+            <h2>5. Descendant Combinator</h2>
+
+            <div>
+                <p>
+                    This paragraph is inside a div.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Child Combinator > -->
+        <section class="selector-section child-example">
+
+            <h2>6. Child Combinator (>)</h2>
+
+            <div>
+                <p>
+                    This is a direct child of the div.
+                </p>
+
+                <section>
+                    <p>
+                        This paragraph is inside another section.
+                    </p>
+                </section>
+            </div>
+
+        </section>
+
+
+        <!-- Adjacent Sibling + -->
+        <section class="selector-section sibling-example">
+
+            <h2>7. Adjacent Sibling (+)</h2>
+
+            <p>First paragraph.</p>
+
+            <p>
+                This paragraph comes immediately after the first paragraph.
+            </p>
+
+        </section>
+
+
+        <!-- General Sibling ~ -->
+        <section class="selector-section general-sibling-example">
+
+            <h2>8. General Sibling (~)</h2>
+
+            <p>First paragraph.</p>
+
+            <p>Second paragraph.</p>
+
+            <p>Third paragraph.</p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Semantic Footer -->
+    <footer>
+        <p>Assignment 8 - Question 4</p>
+    </footer>
+
+</body>
+
+</html>
+```
