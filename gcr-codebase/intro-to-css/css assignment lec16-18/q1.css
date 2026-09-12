@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 200px;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+.solid {
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.dashed {
+    border: 5px dashed black;
+    padding: 20px;
+}
+
+.double {
+    border: 5px double black;
+    padding: 30px;
+}
+
+.groove {
+    border: 5px groove black;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+/* Hover changes border color smoothly */
+.box:hover {
+    border-color: blue;
+}

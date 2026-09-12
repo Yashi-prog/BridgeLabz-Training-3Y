@@ -1,0 +1,67 @@
+/* Attribute selector */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/* Attribute selector for links beginning with https */
+a[href^="https"] {
+    color: blue;
+}
+
+/* :hover pseudo-class */
+a:hover {
+    color: red;
+}
+
+/* :focus pseudo-class */
+input:focus {
+    outline: 3px solid orange;
+}
+
+/* :nth-child pseudo-class */
+.skills li:nth-child(2) {
+    color: green;
+}
+
+/* Child combinator > */
+.skills > li {
+    margin: 10px;
+}
+
+/* Descendant combinator */
+main section h2 {
+    text-decoration: underline;
+}
+
+/* Adjacent sibling + */
+h2 + ul {
+    background-color: #eee;
+    padding: 20px;
+}
+
+/* General sibling ~ */
+h2 ~ ul {
+    border: 2px solid black;
+}
+
+/* Pseudo-element ::before */
+.skills li::before {
+    content: "✓ ";
+}
+
+/* Pseudo-element ::after */
+.skills li::after {
+    content: " ★";
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+.skills {
+    list-style: none;
+    padding: 20px;
+}

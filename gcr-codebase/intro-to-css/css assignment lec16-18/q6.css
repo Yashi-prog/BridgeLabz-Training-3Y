@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px 20px;
+}
+
+.item {
+    text-align: center;
+}
+
+.box {
+    width: 130px;
+    height: 130px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/* Rotate */
+.rotate:hover {
+    transform: rotate(30deg);
+}
+
+/* Scale */
+.scale:hover {
+    transform: scale(1.3);
+}
+
+/* Translate */
+.translate:hover {
+    transform: translate(20px, -20px);
+}
+
+/* Skew */
+.skew:hover {
+    transform: skew(20deg);
+}

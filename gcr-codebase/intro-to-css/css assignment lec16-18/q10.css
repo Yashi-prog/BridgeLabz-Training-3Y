@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 18px 25px;
+    border: 1px solid #555;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Active link */
+.navbar .active {
+    background-color: gray;
+}
+
+main {
+    min-height: 70vh;
+    padding: 100px 20px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Responsive navbar below 700px */
+@media screen and (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        width: 100%;
+    }
+}
