@@ -1,0 +1,83 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+}
+
+/* Header and Footer */
+header, footer {
+    text-align: center;
+    padding: 18px;
+    background: #263e66;
+    color: white;
+}
+
+/* Flexbox Layout */
+.effects {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+/* Common Styling */
+.effect {
+    display: inline-block;
+    padding: 18px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: transform 0.3s ease,
+                background 0.3s ease,
+                box-shadow 0.3s ease;
+
+    box-shadow: 0 3px 8px #00000018;
+}
+
+/* First Button */
+.one {
+    color: white;
+    background: #315fc0;
+    border: none;
+    cursor: pointer;
+}
+
+/* Second Button */
+.two {
+    color: white;
+    background: #16856b;
+}
+
+/* Third Card */
+.three {
+    color: #333;
+    background: white;
+}
+
+/* Hover Effect */
+.effect:hover {
+    transform: scale(1.08);
+    box-shadow: 0 9px 18px #00000028;
+    background: #e65c82;
+    color: white;
+}
+
+/* Active Effect */
+.effect:active {
+    transform: scale(0.96);
+}
+
+/* Focus Effect */
+.effect:focus {
+    outline: 3px solid #f1b900;
+    outline-offset: 4px;
+}

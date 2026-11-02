@@ -1,0 +1,86 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f5fa;
+}
+
+/* Header and Footer */
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background: #263d61;
+    color: white;
+}
+
+/* Flexbox Alignment */
+.buttons {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+/* Common Button Styling */
+button {
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 3px 8px #00000018;
+}
+
+/* Primary Button */
+.primary {
+    background: #2457c5;
+    color: white;
+    border: 1px solid #2457c5;
+}
+
+/* Secondary Button */
+.secondary {
+    background: #344054;
+    color: white;
+    border: 1px solid #344054;
+}
+
+/* Outline Button */
+.outline {
+    background: transparent;
+    color: #2457c5;
+    border: 2px solid #2457c5;
+}
+
+/* Hover Effect */
+button:not(:disabled):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px #00000025;
+}
+
+/* Active Effect */
+button:not(:disabled):active {
+    transform: scale(0.96);
+}
+
+/* Focus Effect */
+button:focus {
+    outline: 3px solid #f2b705;
+    outline-offset: 3px;
+}
+
+/* Disabled Button */
+button:disabled {
+    background: #c8cbd1;
+    color: #666;
+    border: 1px solid #c8cbd1;
+    cursor: not-allowed;
+    box-shadow: none;
+}

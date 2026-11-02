@@ -1,0 +1,81 @@
+
+/* Element Selector */
+p {
+    color: #34445c;
+    line-height: 1.5;
+}
+
+/* Class Selector */
+.highlight {
+    background: #fff0b8;
+    padding: 8px;
+}
+
+/* ID Selector */
+#special {
+    color: #b4235a;
+    font-weight: bold;
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    color: #2457c5;
+}
+
+/* Descendant Combinator */
+.parent p {
+    border-left: 3px solid #6b8ed6;
+    padding-left: 10px;
+}
+
+/* Child Combinator */
+.parent > ul > li {
+    background: #e8efff;
+    margin: 5px;
+    padding: 6px;
+}
+
+/* Adjacent Sibling Combinator */
+.parent + .next {
+    color: #13805c;
+}
+
+/* General Sibling Combinator */
+.parent ~ p {
+    font-style: italic;
+}
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+}
+
+/* Header and Footer */
+header, footer {
+    text-align: center;
+    padding: 18px;
+    background: #293d66;
+    color: white;
+}
+
+/* Main Section */
+main {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 0 18px;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    margin: 16px 0;
+    padding: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,92 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5fb;
+}
+
+/* Header and Footer */
+header, footer {
+    text-align: center;
+    padding: 18px;
+    background: #39366f;
+    color: white;
+}
+
+/* Centering Animation Elements */
+.stage {
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    overflow: hidden;
+}
+
+/* Moving Box Animation */
+.moving {
+    padding: 15px 22px;
+    background: #4b73d1;
+    color: white;
+    border-radius: 8px;
+
+    animation: move 3s ease-in-out infinite alternate;
+}
+
+/* Bouncing Ball */
+.ball {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #ef6684;
+
+    animation: bounce 1s ease-in-out infinite;
+}
+
+/* Color Changing Text */
+.color-text {
+    animation: colors 3s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+/* Moving Animation */
+@keyframes move {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
+/* Bouncing Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-35px);
+    }
+}
+
+/* Color Changing Animation */
+@keyframes colors {
+    0% {
+        color: #39366f;
+    }
+
+    50% {
+        color: #e34f78;
+    }
+
+    100% {
+        color: #238b72;
+    }
+}

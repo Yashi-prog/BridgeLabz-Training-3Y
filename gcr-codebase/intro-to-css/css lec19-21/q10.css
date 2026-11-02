@@ -1,0 +1,139 @@
+
+/* Common Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f5fa;
+    color: #27364b;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 7%;
+    background: #263e66;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Card */
+.main-card {
+    max-width: 760px;
+    margin: 40px auto;
+    display: flex;
+    background: white;
+    border: 1px solid #e1e5ec;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 7px 22px #00000018;
+}
+
+/* Image */
+.main-card img {
+    width: 42%;
+    object-fit: cover;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 25px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+input {
+    padding: 11px;
+    border: 1px solid #cbd3df;
+    border-radius: 7px;
+}
+
+/* Input Focus */
+input:focus {
+    outline: 2px solid #668be0;
+    border-color: #668be0;
+}
+
+/* Buttons */
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+button {
+    flex: 1;
+    padding: 11px;
+    border: 0;
+    border-radius: 7px;
+    background: #315fc0;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1e438f;
+}
+
+button:focus {
+    outline: 3px solid #f0b900;
+    outline-offset: 2px;
+}
+
+/* Reset Button */
+button.reset {
+    background: #707b8c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #263e66;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-card {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .main-card img {
+        width: 100%;
+        height: 180px;
+    }
+}
