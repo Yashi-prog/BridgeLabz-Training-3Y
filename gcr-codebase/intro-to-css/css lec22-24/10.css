@@ -1,0 +1,138 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #263e66;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+    background: #263e66;
+    color: white;
+}
+
+/* Dashboard Grid */
+.dashboard {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 75vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #dce5f3;
+    padding: 25px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sidebar a {
+    color: #263e66;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #16856b;
+}
+
+/* Main Content */
+.main-content {
+    padding: 30px;
+}
+
+/* Cards Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Individual Cards */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000020;
+
+    animation: fadeIn 1s ease;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 20px #00000030;
+}
+
+/* Code Styling */
+.card code {
+    display: inline-block;
+    background: #e9edf5;
+    padding: 8px;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+/* Card Link */
+.card a {
+    color: #315fc0;
+    font-weight: bold;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #263e66;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}

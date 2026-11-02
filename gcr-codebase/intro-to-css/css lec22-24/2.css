@@ -1,0 +1,91 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #263e66;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Feature Boxes */
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Individual Box */
+.feature-box {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #00000020;
+
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #263e66;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-box {
+        width: 100%;
+    }
+}

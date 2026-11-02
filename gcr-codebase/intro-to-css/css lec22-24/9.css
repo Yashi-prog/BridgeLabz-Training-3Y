@@ -1,0 +1,83 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background: #263e66;
+    color: white;
+}
+
+/* Grid Layout */
+.principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 35px;
+}
+
+/* Principle Boxes */
+.box {
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000020;
+
+    transition: background 0.4s ease,
+                color 0.4s ease,
+                transform 0.4s ease;
+}
+
+/* Hover Effect */
+.box:hover {
+    background: linear-gradient(135deg, #315fc0, #16856b);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.box h2 {
+    color: #263e66;
+}
+
+.box:hover h2 {
+    color: white;
+}
+
+/* Code Example */
+pre {
+    background: #edf0f5;
+    padding: 12px;
+    border-radius: 7px;
+    overflow-x: auto;
+}
+
+.box:hover pre {
+    background: #ffffff25;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #263e66;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .principles {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}

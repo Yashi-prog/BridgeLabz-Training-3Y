@@ -1,0 +1,78 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background: #263e66;
+    color: white;
+}
+
+/* Grid Layout */
+.cheat-sheet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 35px;
+}
+
+/* Topic Boxes */
+.topic {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000020;
+
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+/* Hover Effect */
+.topic:hover {
+    transform: translateY(-5px);
+    background: #e1ecff;
+}
+
+/* Heading */
+.topic h2 {
+    color: #263e66;
+}
+
+/* Code Example */
+.topic code {
+    display: inline-block;
+    background: #e9edf5;
+    padding: 10px;
+    border-radius: 5px;
+    color: #d63384;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #263e66;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 700px) {
+
+    .cheat-sheet {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .topic {
+        width: 100%;
+    }
+}

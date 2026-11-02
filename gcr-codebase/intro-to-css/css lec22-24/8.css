@@ -1,0 +1,78 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background: #263e66;
+    color: white;
+}
+
+/* Comparison Layout */
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Image Box */
+.image-box {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000020;
+}
+
+/* Images */
+.image-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Apply Filter on Right Image */
+.filtered {
+    filter: brightness(50%) contrast(130%);
+    transition: filter 0.5s ease;
+}
+
+/* Remove Filter on Hover */
+.filtered:hover {
+    filter: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #263e66;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 700px) {
+
+    .comparison {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .image-box {
+        width: 100%;
+    }
+}

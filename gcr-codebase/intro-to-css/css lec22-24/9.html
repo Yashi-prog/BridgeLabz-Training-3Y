@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles</title>
+    <link rel="stylesheet" href="responsive-design-principles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Design Principles</h1>
+        <p>Three Important Principles of Responsive Web Design</p>
+    </header>
+
+    <main>
+        <section class="principles">
+
+            <!-- Fluid Layouts -->
+            <div class="box">
+                <h2>Fluid Layouts</h2>
+
+                <p>
+                    Fluid layouts use flexible units like percentages
+                    to adjust the width of elements according to
+                    screen size.
+                </p>
+
+                <pre><code>
+.container {
+    width: 100%;
+}
+                </code></pre>
+            </div>
+
+            <!-- Flexible Media -->
+            <div class="box">
+                <h2>Flexible Media</h2>
+
+                <p>
+                    Flexible media allows images and videos to
+                    resize according to the available screen space.
+                </p>
+
+                <pre><code>
+img {
+    max-width: 100%;
+    height: auto;
+}
+                </code></pre>
+            </div>
+
+            <!-- Breakpoints -->
+            <div class="box">
+                <h2>Breakpoints</h2>
+
+                <p>
+                    Breakpoints are screen sizes where the website
+                    layout changes using media queries.
+                </p>
+
+                <pre><code>
+@media (max-width: 600px) {
+    body {
+        background: lightblue;
+    }
+}
+                </code></pre>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>CSS Assignment 9 - Question 9</p>
+    </footer>
+
+</body>
+</html>
