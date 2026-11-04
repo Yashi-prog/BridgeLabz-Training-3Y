@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Ticket Booking</title>
+</head>
+
+<body>
+
+    <h2>Movie Ticket Booking</h2>
+
+    <form id="bookingForm">
+
+        <input type="text" id="name" placeholder="Enter Name">
+        <br><br>
+
+        <input type="email" id="email" placeholder="Enter Email">
+        <br><br>
+
+        <input type="number" id="seats" placeholder="Number of Seats">
+        <br><br>
+
+        <button type="submit">Book Ticket</button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <div id="ticket"></div>
+
+    <script>
+        "use strict";
+
+        const bookingForm = document.getElementById("bookingForm");
+
+        const namePattern = /^[A-Za-z]+$/;
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        bookingForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+
+            const email = document.getElementById("email").value.trim();
+
+            const seats = Number(
+                document.getElementById("seats").value
+            );
+
+            const message = document.getElementById("message");
+
+            const ticket = document.getElementById("ticket");
+
+            // Validate name
+            if (!namePattern.test(name)) {
+
+                message.textContent =
+                    "Name must contain alphabets only.";
+
+                message.style.color = "red";
+
+                return;
+            }
+
+            // Validate email
+            if (!emailPattern.test(email)) {
+
+                message.textContent =
+                    "Please enter a valid email.";
+
+                message.style.color = "red";
+
+                return;
+            }
+
+            // Validate seats
+            if (!Number.isInteger(seats) || seats < 1 || seats > 10) {
+
+                message.textContent =
+                    "Seats must be between 1 and 10.";
+
+                message.style.color = "red";
+
+                return;
+            }
+
+            // Create booking object
+            const booking = {
+                name: name,
+                email: email,
+                seats: seats
+            };
+
+            // Display ticket details
+            message.textContent = "Booking Successful!";
+
+            message.style.color = "green";
+
+            ticket.innerHTML = `
+                <h3>Movie Ticket</h3>
+                <p>Name: ${booking.name}</p>
+                <p>Email: ${booking.email}</p>
+                <p>Seats: ${booking.seats}</p>
+            `;
+        });
+    </script>
+
+</body>
+
+</html>

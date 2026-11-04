@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Validation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 250px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Login Form</h2>
+
+    <form id="loginForm">
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Enter Username"
+        >
+
+        <br>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+        >
+
+        <br>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <p id="usernameError" class="error"></p>
+
+    <p id="passwordError" class="error"></p>
+
+    <p id="result"></p>
+
+    <script>
+        "use strict";
+
+        const loginForm = document.getElementById("loginForm");
+
+        // Username must contain at least 5 characters
+        const usernamePattern = /^.{5,}$/;
+
+        // Password validation
+        const passwordPattern =
+            /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^A-Za-z0-9]).{8,}$/;
+
+        loginForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const username =
+                document.getElementById("username").value;
+
+            const password =
+                document.getElementById("password").value;
+
+            const usernameError =
+                document.getElementById("usernameError");
+
+            const passwordError =
+                document.getElementById("passwordError");
+
+            const result =
+                document.getElementById("result");
+
+            // Clear previous errors
+            usernameError.textContent = "";
+
+            passwordError.textContent = "";
+
+            result.textContent = "";
+
+            let isValid = true;
+
+            // Validate username
+            if (!usernamePattern.test(username)) {
+
+                usernameError.textContent =
+                    "Username must contain at least 5 characters.";
+
+                isValid = false;
+            }
+
+            // Validate password
+            if (!passwordPattern.test(password)) {
+
+                passwordError.textContent =
+                    "Password must contain 8 characters, uppercase, lowercase, number and special character.";
+
+                isValid = false;
+            }
+
+            // Display result
+            if (isValid) {
+
+                result.textContent = "Login Successful!";
+
+                result.className = "success";
+
+            } else {
+
+                result.textContent = "Please correct the errors.";
+
+                result.className = "error";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

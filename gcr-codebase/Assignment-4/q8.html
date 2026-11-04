@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Object Updater</title>
+</head>
+
+<body>
+
+    <h2>Edit User Details</h2>
+
+    <form id="userForm">
+
+        <label>Name:</label>
+
+        <input type="text" id="name" required>
+
+        <br><br>
+
+        <label>Email:</label>
+
+        <input type="email" id="email" required>
+
+        <br><br>
+
+        <label>Age:</label>
+
+        <input type="number" id="age" required>
+
+        <br><br>
+
+        <button type="submit">Update User</button>
+
+    </form>
+
+    <h3>Updated User Details</h3>
+
+    <pre id="output"></pre>
+
+    <script>
+        "use strict";
+
+        const user = {
+            name: "John",
+            email: "john@mail.com",
+            age: 21
+        };
+
+        const userForm = document.getElementById("userForm");
+
+        const nameInput = document.getElementById("name");
+
+        const emailInput = document.getElementById("email");
+
+        const ageInput = document.getElementById("age");
+
+        const output = document.getElementById("output");
+
+        
+        nameInput.value = user.name;
+
+        emailInput.value = user.email;
+
+        ageInput.value = user.age;
+
+        
+        function displayUser() {
+
+            output.textContent = JSON.stringify(user, null, 2);
+        }
+
+        
+        displayUser();
+
+        
+        userForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            
+            user.name = nameInput.value;
+
+            user.email = emailInput.value;
+
+            user.age = Number(ageInput.value);
+
+            
+            displayUser();
+
+            console.log(user);
+        });
+    </script>
+
+</body>
+
+</html>
